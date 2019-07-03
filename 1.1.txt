@@ -1,0 +1,20 @@
+1. Git
+1.1 创建版本库repository
+1.1.1首先，选择一个合适的地方，创建一个空目录：
+    mkdir git
+    cd git
+    pwd
+pwd命令用于显示当前目录。在我的Windows上，这个仓库位于/Users/liu/git。
+
+1.1.2第二步，通过git init命令把这个目录变成Git可以管理的仓库, 如果你没有看到.git目录，那是因为这个目录默认是隐藏的，用ls -ah命令就可以看见。
+     git init
+     ls -ah
+
+1.1.3把文件添加到版本库
+1.1.3.1现在我们编写一个readme.txt文件放到git目录下
+1.1.3.2用命令git add告诉Git，把文件添加到仓库：（可反复多次使用，添加多个文件；）
+     git add ...
+
+1.1.3.3第二步，用命令git commit告诉Git，把文件提交到仓库：
+     git commit -m "..."
+ 
